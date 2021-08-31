@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="bootstrap.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<!--Navigation Bar-->
+ <nav class="navbar navbar-default">
+   <div class="container">
+       <div class="navbar-header">
+           <a class="navbar-brand" href="index.html">My Contact Form</a>
+       </div>
+    </div>
+</nav>
+
+<!--Centers form-->
+<form class="col-md-8 offset-md-3 needs-validation" onsubmit="alert('Huge Success!')">
+    <div class="container">
+<!--First / Last name etc -->
+    <h1 class="col-md-5 offset-md-2">My Contact Form</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="form-label" for="firstName">First Name:</label>
+                <input type="firstName" class="form-control" id="firstName" placeholder="Enter First Name" required>
+             </div>
+          </div>   
+          <div class="col-md-4">
+              <div class="form-group">
+            <label class="form-label" for="lastName">Last Name:</label>
+            <input type="lastName" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+        <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="form-group">
+            <label class="form-message" for="message">Message</label>
+            <textarea type="message" class="form-control" id="message" placeholder="What you want?" rows="6"></textarea>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
+</div> <!--End of Container-->
+</form>
+
+
+</body>
+</html>
