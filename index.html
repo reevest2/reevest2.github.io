@@ -7,7 +7,6 @@
     <title>Contact Form</title>
     <link href="bootstrap.css" rel="stylesheet">
     <script src="bootstrap.js" defer></script>
-    <script src="script.js" defer></script>
 </head>
 <body>
 <!--Navigation Bar-->
@@ -19,8 +18,8 @@
     </div>
 </nav>
 
-<!--Centers form-->
-<form class="col-md-8 offset-md-3 needs-validation" onsubmit="alert('Huge Success!')">
+<!--onsubmit="alert('Huge Success!')"-->
+<form action="form results.html" method="GET" class="col-md-8 offset-md-3 needs-validation" >
     <div class="container">
 <!--First / Last name etc -->
     <h1 class="col-md-5 offset-md-2">My Contact Form</h1>
@@ -28,29 +27,30 @@
         <div class="col-md-4">
             <div class="form-group">
                 <label class="form-label" for="firstName">First Name:</label>
-                <input type="firstName" class="form-control" id="firstName" placeholder="Enter First Name" required>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name" required>
              </div>
           </div>   
           <div class="col-md-4">
               <div class="form-group">
             <label class="form-label" for="lastName">Last Name:</label>
-            <input type="lastName" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Last Name" required>
           </div>
       </div>
     </div>
     <div class="col-md-8">
         <div class="form-group">
             <label class="form-label" for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
         </div>
     </div>
     <div class="col-md-8">
         <div class="form-group">
             <label class="form-message" for="message">Message</label>
-            <textarea type="message" class="form-control" id="message" placeholder="What you want?" rows="6"></textarea>
+            <textarea type="textarea" class="form-control" id="message" name="message" placeholder="What you want?" rows="6"></textarea>
         </div>
     </div>
     <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
+    <button type="reset" class="btn btn-primary btn-lg">Reset</button>
 </div> <!--End of Container-->
 </form>
 
